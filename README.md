@@ -1,6 +1,10 @@
-# chat_app
+# Chat App Client using Flutter
 
-A new Flutter project.
+Chat app created by flutter with foucs on ui
+
+## Screen Shots
+![Screen shot 1](/demo/screenshot_1.png)
+![Screen shot 1](/demo/screenshot_2.png)
 
 ## Getting Started
 

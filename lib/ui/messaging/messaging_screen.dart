@@ -42,8 +42,37 @@ class MessagingScreen extends StatelessWidget {
                 maxWidth: MediaQuery.of(context).size.width * 0.7,
               ),
               child: Text(
-                "Hello Wold",
-                style: TextStyle(color: Colors.white),
+                "Hello, How are you doing?",
+                style: TextStyle(color: Colors.white, fontSize: 18),
+              ),
+            ),
+          ),
+          ChatBubble(
+            clipper: ChatBubbleClipper1(type: BubbleType.receiverBubble),
+            margin: EdgeInsets.only(top: 20),
+            backGroundColor: Colors.white,
+            child: Container(
+              constraints: BoxConstraints(
+                maxWidth: MediaQuery.of(context).size.width * 0.7,
+              ),
+              child: Text(
+                "Hi ,thank you i'm fine. How about you?",
+                style: TextStyle(color: Colors.black, fontSize: 18),
+              ),
+            ),
+          ),
+          ChatBubble(
+            clipper: ChatBubbleClipper1(type: BubbleType.sendBubble),
+            alignment: Alignment.topRight,
+            margin: EdgeInsets.only(top: 20),
+            backGroundColor: Colors.blue,
+            child: Container(
+              constraints: BoxConstraints(
+                maxWidth: MediaQuery.of(context).size.width * 0.7,
+              ),
+              child: Text(
+                "I'm ok, Just miss you alot",
+                style: TextStyle(color: Colors.white, fontSize: 18),
               ),
             ),
           ),
@@ -51,7 +80,7 @@ class MessagingScreen extends StatelessWidget {
               child: Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              color: Color(0xFFdddddd),
+              color: Color(0xFF1b263b),
               padding: EdgeInsets.symmetric(vertical: 10),
               child: Row(
                 children: [
@@ -59,19 +88,23 @@ class MessagingScreen extends StatelessWidget {
                     child: Container(
                       margin: EdgeInsets.only(left: 10),
                       decoration: BoxDecoration(
-                          color: Color(0xFFbbbbbb),
+                          color: Color(0xFF415a77),
                           borderRadius: BorderRadius.circular(15)),
                       child: TextField(
                         decoration: InputDecoration(
                             border: InputBorder.none,
                             hintText: 'Message',
+                            hintStyle: TextStyle(color: Colors.white),
                             contentPadding:
                                 EdgeInsets.symmetric(horizontal: 10)),
                       ),
                     ),
                   ),
                   IconButton(
-                    icon: Icon(Icons.send),
+                    icon: Icon(
+                      Icons.send,
+                      color: Colors.white,
+                    ),
                     onPressed: () => {},
                   )
                 ],
