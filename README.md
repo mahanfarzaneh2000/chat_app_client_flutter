@@ -3,8 +3,7 @@
 Chat app created by flutter with foucs on ui
 
 ## Screen Shots
-![Screen shot 1](/demo/screenshot_1.png)
-![Screen shot 1](/demo/screenshot_2.png)
+![Screen shot 1](/demo/screenshot_1.png) ![Screen shot 1](/demo/screenshot_2.png)
 
 ## Getting Started
 
